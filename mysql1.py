@@ -3,9 +3,9 @@
 #         of class 12th on
 #topic of student managment using mysql 
 
-
+#to work user must creat a database in mysql with username root and password root
 import mysql.connector
-mydb = mysql.connector.connect(host ="localhost",user ="root",passwd ="lata")
+mydb = mysql.connector.connect(host ="localhost",user ="root",passwd ="root")
 mycur = mydb.cursor()
 mycur.execute("create database if not exists student_db1")
 mycur.execute("use student_db1")
